@@ -1,0 +1,353 @@
+```css
+/* =========================================
+   PERSONAL PORTFOLIO - CLASSIC DESIGN
+   ========================================= */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f4efe3;
+    color: #333333;
+    line-height: 1.6;
+
+    /* Subtle classic paper texture */
+    background-image:
+        radial-gradient(#d8ccb5 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    background: #14263d;
+    color: #f5e6c8;
+    text-align: center;
+    padding: 35px 20px;
+
+    border-bottom: 4px solid #b08d57;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #f5e6c8;
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    border: 1px solid transparent;
+
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+
+    border: 1px solid #b08d57;
+
+    background-color: rgba(176, 141, 87, 0.15);
+
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   MAIN CONTENT
+   ========================================= */
+
+main {
+    max-width: 1000px;
+
+    margin: 50px auto;
+
+    padding: 50px;
+
+    background-color: #fffdf7;
+
+    border: 1px solid #d2bd91;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 10px 30px rgba(50, 40, 20, 0.15);
+
+    min-height: 400px;
+}
+
+/* =========================================
+   HOME / HERO
+   ========================================= */
+
+.hero {
+    text-align: center;
+
+    padding: 90px 30px;
+}
+
+.hero h2 {
+    font-size: 52px;
+
+    color: #14263d;
+
+    margin-bottom: 20px;
+}
+
+.hero h2::after {
+    content: "";
+
+    display: block;
+
+    width: 80px;
+    height: 3px;
+
+    background-color: #b08d57;
+
+    margin: 20px auto;
+}
+
+.hero p {
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+    color: #555555;
+
+    margin: 10px auto;
+
+    max-width: 700px;
+}
+
+/* =========================================
+   HEADINGS
+   ========================================= */
+
+main h2 {
+    color: #14263d;
+
+    text-align: center;
+
+    font-size: 38px;
+
+    margin-bottom: 25px;
+}
+
+main h3 {
+    color: #8a6b3f;
+
+    font-size: 26px;
+
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   PARAGRAPHS
+   ========================================= */
+
+main p {
+    font-family: Arial, sans-serif;
+
+    color: #4b4b4b;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   LISTS
+   ========================================= */
+
+ul {
+    list-style: none;
+
+    margin-top: 15px;
+}
+
+li {
+    font-family: Arial, sans-serif;
+
+    background-color: #f4ecdc;
+
+    border-left: 4px solid #b08d57;
+
+    padding: 12px 18px;
+
+    margin: 10px 0;
+
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background-color: #eadcbd;
+
+    transform: translateX(5px);
+}
+
+/* =========================================
+   PROJECT CARDS
+   ========================================= */
+
+article {
+    background-color: #faf6ec;
+
+    border: 1px solid #d6c5a5;
+
+    border-left: 5px solid #b08d57;
+
+    padding: 25px;
+
+    margin: 20px 0;
+
+    border-radius: 4px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+article h3 {
+    margin-top: 0;
+
+    color: #14263d;
+}
+
+/* =========================================
+   CONTACT
+   ========================================= */
+
+main strong {
+    color: #8a6b3f;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    background-color: #14263d;
+
+    color: #f5e6c8;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+
+    border-top: 3px solid #b08d57;
+}
+
+footer p {
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    nav a {
+        width: 200px;
+
+        text-align: center;
+    }
+
+    main {
+        margin: 25px 15px;
+
+        padding: 30px 20px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h2 {
+        font-size: 38px;
+    }
+
+    main h2 {
+        font-size: 32px;
+    }
+
+    main h3 {
+        font-size: 24px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE SCREEN
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+}
+```
